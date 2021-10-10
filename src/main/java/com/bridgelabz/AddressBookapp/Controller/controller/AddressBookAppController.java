@@ -48,17 +48,17 @@ public class AddressBookAppController {
         return addressBookService.getPersonByEmail(email);
     }
 
-    @PostMapping(value = "/persons")
+    @PostMapping(value = "/person")
     public AddressBookData addPerson(@RequestBody AddressBookData addressBookData) {
         return addressBookService.addPerson(addressBookData);
     }
 
-    @PutMapping(value = "/persons")
+    @PutMapping(value = "/person")
     public AddressBookData updatePerson(@RequestBody AddressBookData addressBookData) {
         return addressBookService.updatePerson(addressBookData);
     }
 
-    @DeleteMapping(value = "/persons")
+    @DeleteMapping(value = "/person")
     public String deletePerson(@RequestParam int id) {
         return addressBookService.deletePerson(id);
     }
