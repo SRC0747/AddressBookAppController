@@ -1,5 +1,6 @@
 package com.bridgelabz.AddressBookapp.Controller.controller;
 
+import com.bridgelabz.AddressBookapp.Controller.DTO.AddressBookDTO;
 import com.bridgelabz.AddressBookapp.Controller.entity.AddressBookData;
 import com.bridgelabz.AddressBookapp.Controller.service.AddressBookService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,8 +55,8 @@ public class AddressBookAppController {
     }
 
     @PutMapping(value = "/person")
-    public AddressBookData updatePerson(@RequestBody AddressBookData addressBookData) {
-        return addressBookService.updatePerson(addressBookData);
+    public AddressBookData updatePerson(@PathVariable int id, @RequestBody AddressBookDTO addressBookDTO) {
+        return addressBookService.updatePerson(id, addressBookDTO);
     }
 
     @DeleteMapping(value = "/person")
