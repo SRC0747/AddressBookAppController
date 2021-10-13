@@ -1,13 +1,13 @@
-package com.bridgelabz.AddressBookapp.Controller;
+package com.bridgeLabz.AddressBookApp.Controller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AddressBookappControllerApplication {
+public class AddressBookAppControllerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AddressBookappControllerApplication.class, args);
+		SpringApplication.run(AddressBookAppControllerApplication.class, args);
 	}
 
 }
