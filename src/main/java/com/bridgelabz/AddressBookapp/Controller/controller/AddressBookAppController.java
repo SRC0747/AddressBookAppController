@@ -5,13 +5,11 @@ import com.bridgelabz.AddressBookapp.Controller.entity.AddressBookData;
 import com.bridgelabz.AddressBookapp.Controller.service.AddressBookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.List;
 
 @RequestMapping("/Api")
 @RestController
-@EnableSwagger2
 public class AddressBookAppController {
     // CRUD
     //read

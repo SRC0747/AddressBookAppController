@@ -6,6 +6,14 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
+/**
+ * Creating AddressBook Repository to make a connection with JPA and handling http requests
+ *
+ * @author Sampriti Roy Chowdhury
+ * version 0.0.1
+ * @since 15-10-2021
+ */
+
 @Repository
 public interface AddressBookRepository extends JpaRepository<AddressBookData, Integer> {
 
