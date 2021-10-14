@@ -15,8 +15,12 @@ public class AddressBookData {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
-    private int mobileNo;
+    private String mobileNo;
     private String state;
     private String city;
     private String email;
+
+    public void setAddress(String state) {
+        this.state = state;
+    }
 }

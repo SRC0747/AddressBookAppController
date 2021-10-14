@@ -129,4 +129,16 @@ public class AddressBookService {
         //return addressBookRepository.save(addressBookData);
         return null;
     }
+    List<AddressBookDTO> addresses;
+    public List<AddressBookDTO> getAddresses() {
+        return addresses;
+    }
+
+    public void setAddresses(List<AddressBookDTO> addresses) {
+        this.addresses = addresses;
+    }
+
+    public AddressBookDTO addAddressBook(AddressBookDTO addressBookDTO) {
+        return addressBookDTO;
+    }
 }

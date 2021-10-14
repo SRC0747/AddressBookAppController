@@ -21,6 +21,7 @@ public class AddressBookDTO {
     private String state;
     private String city;
     private String email;
+    private String address;
 
     public int getId() {
         return id;
@@ -28,5 +29,9 @@ public class AddressBookDTO {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
