@@ -9,6 +9,13 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * AddressBookAppController setting up CRUD operations in application
+ * @author Sampriti Roy Chowdhury
+ * version 0.0.1
+ * @since 15-10-2021
+ */
+
 @RequestMapping("/Api")
 @RestController
 public class AddressBookAppController {

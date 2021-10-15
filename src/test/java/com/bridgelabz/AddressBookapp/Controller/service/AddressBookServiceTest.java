@@ -43,19 +43,19 @@ class AddressBookServiceTest {
         ArrayList<AddressBookData> addressBookDOList = new ArrayList<>();
         AddressBookData addressBookDO1 = new AddressBookData();
         addressBookDO1.setId(1);
-        addressBookDO1.setName("Sanobar");
+        addressBookDO1.setName("Sampriti");
         AddressBookData addressBookDO2 = new AddressBookData();
         addressBookDO2.setId(2);
-        addressBookDO2.setName("Divya");
+        addressBookDO2.setName("Dipali");
         addressBookDOList.add(addressBookDO1);
         addressBookDOList.add(addressBookDO2);
 
         AddressBookDTO addressBookDTO = new AddressBookDTO();
         addressBookDTO.setId(1);
-        addressBookDTO.setName("Sanobar");
+        addressBookDTO.setName("Sampriti");
         AddressBookDTO addressBookDTO2 = new AddressBookDTO();
         addressBookDTO2.setId(2);
-        addressBookDTO2.setName("Divya");
+        addressBookDTO2.setName("Dipali");
 
         when(addressBookRepository.findAll()).thenReturn(addressBookDOList);
         when(modelMapper.map(((ArrayList<?>) addressBookDOList).get(0), AddressBookDTO.class)).thenReturn(
@@ -69,8 +69,8 @@ class AddressBookServiceTest {
         for (int i = 0; i < ((ArrayList<?>) addressBookDOList).size(); i++) {
             assertEquals(i + 1, actualAddressesList.get(i).getId());
         }
-        assertEquals("Sanobar", actualAddressesList.get(0).getName());
-        assertEquals("Divya", actualAddressesList.get(1).getName());
+        assertEquals("Sampriti", actualAddressesList.get(0).getName());
+        assertEquals("Dipali", actualAddressesList.get(1).getName());
     }
 
     @Test
