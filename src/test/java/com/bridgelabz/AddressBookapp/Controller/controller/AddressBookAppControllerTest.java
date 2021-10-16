@@ -4,9 +4,11 @@ import com.bridgelabz.AddressBookapp.Controller.DTO.AddressBookDTO;
 import com.bridgelabz.AddressBookapp.Controller.service.IAddressBookService;
 import com.google.common.collect.Lists;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -24,7 +26,7 @@ import static org.mockito.Mockito.when;
  * @since 15-10-2021
  */
 
-
+@ExtendWith(MockitoExtension.class)
 class AddressBookAppControllerTest {
 
     @InjectMocks

@@ -26,7 +26,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.bridgelabz"))
+                .apis(RequestHandlerSelectors.basePackage("com.bridgelabz.AddressBookapp.Controller.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(metadata());
