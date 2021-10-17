@@ -42,60 +42,6 @@ class AddressBookServiceTest {
     @Mock
     private AddressBuilder addressBuilder;
 
-    /*@Test
-    public void getAddressTest() {
-        ArrayList<AddressBookData> addressBookDOList = new ArrayList<>();
-        AddressBookData addressBookDO1 = new AddressBookData();
-        addressBookDO1.setId(1);
-        addressBookDO1.setName("Sampriti");
-        AddressBookData addressBookDO2 = new AddressBookData();
-        addressBookDO2.setId(2);
-        addressBookDO2.setName("Dipali");
-        addressBookDOList.add(addressBookDO1);
-        addressBookDOList.add(addressBookDO2);
-
-        AddressBookDTO addressBookDTO = new AddressBookDTO();
-        addressBookDTO.setId(1);
-        addressBookDTO.setName("Sampriti");
-        AddressBookDTO addressBookDTO2 = new AddressBookDTO();
-        addressBookDTO2.setId(2);
-        addressBookDTO2.setName("Dipali");
-
-        when(addressBookRepository.findAll()).thenReturn(addressBookDOList);
-        when(modelMapper.map(((ArrayList<?>) addressBookDOList).get(0), AddressBookDTO.class)).thenReturn(
-                addressBookDTO);
-        when(modelMapper.map(((ArrayList<?>) addressBookDOList).get(1), AddressBookDTO.class)).thenReturn(
-                addressBookDTO2);
-
-        List<AddressBookDTO> actualAddressesList = addressBookService.getAddresses();
-
-        assertNotNull(actualAddressesList);
-        for (int i = 0; i < ((ArrayList<?>) addressBookDOList).size(); i++) {
-            assertEquals(i + 1, actualAddressesList.get(i).getId());
-        }
-        assertEquals("Sampriti", actualAddressesList.get(0).getName());
-        assertEquals("Dipali", actualAddressesList.get(1).getName());
-    }
-
-    @Test
-    public void addAddressBookTest() {
-        AddressBookDTO addressBookDTO = new AddressBookDTO();
-        addressBookDTO.setName("Sampriti");
-        addressBookDTO.setAddress("WB");
-
-        AddressBookData addressBookData = new AddressBookData();
-        addressBookData.setName("Sampriti");
-        addressBookData.setAddress("WB");
-        addressBookData.setId(1);
-
-        when(addressBuilder.buildDO(addressBookDTO)).thenReturn(addressBookData);
-        when(addressBookRepository.save(addressBookData)).thenReturn(addressBookData);
-
-        AddressBookDTO actualAddressBookDTO = addressBookService.addAddressBook(addressBookDTO);
-        assertNotNull(actualAddressBookDTO);
-        assertEquals(1, actualAddressBookDTO.getId());
-    }*/
-
     @Test
     public void getPersonByID_WhenIdIsGiven() {
         AddressBookData addressBookData = new AddressBookData();
